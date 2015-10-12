@@ -3,10 +3,13 @@ var Path = require('path')
 
 var fsTransformer = require('../')
 
-test('transform fs', function (t) {
+test('single transform', function (t) {
   fsTransformer({
-    input: {
-      root: Path.join(__dirname, 'fixtures')
+    root: Path.join(__dirname, 'fixtures'),
+    transformers: {
+      '*.md': [
+        ['markdown-it', {}]
+      ]
     }
   })
   .on('error', function (err) {
