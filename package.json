@@ -1,0 +1,41 @@
+{
+  "name": "fstransfomer",
+  "version": "0.0.0",
+  "description": "recursively transform the filesystem using jstransformers",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "ava test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahdinosaur/fstransformer.git"
+  },
+  "keywords": [
+    "jstransformer",
+    "fs",
+    "recursive",
+    "transform",
+    "compile",
+    "render"
+  ],
+  "author": "ahdinosaur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahdinosaur/fstransformer/issues"
+  },
+  "homepage": "https://github.com/ahdinosaur/fstransformer#readme",
+  "devDependencies": {
+    "ava": "^0.2.0",
+    "jstransformer-markdown-it": "^0.1.0",
+    "jstransformer-mdast": "^0.1.0"
+  },
+  "dependencies": {
+    "inputformat-to-jstransformer": "^1.1.5",
+    "jstransformer": "0.0.3",
+    "readdirp": "^2.0.0",
+    "through2": "^2.0.0"
+  }
+}
